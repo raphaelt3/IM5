@@ -9,7 +9,7 @@ const body = document.querySelector('body');
 const mobileMenu = () => {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
-    body.classList.toggle.('active');
+    body.classList.toggle('active');
 }
 
 // eventListener (quasi "Actiontrigger"--> wenn ich auf's Hamburger Menü klicke die Funktion mobile Menü auslösen

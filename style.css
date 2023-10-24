@@ -1,0 +1,50 @@
+/* mit :root Hauptfarben Website festlegen */
+:root {
+    --red: #f9032f;
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0 ;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: var(--black);
+    height: 60px;
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar__logo {
+    color: var(--white);
+    text-decoration: none;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar__link {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0rem 1rem;
+}
+
+.navbar__link:hover {
+    color: var(--red);
+}
+
+/* max-width 768px bewirkt dass Navigationsmenü ab Breite von 768px verschwindet  */
+@media screen and (max-width: 768px) {  
+   .navbar__link {
+    display: none;
+   }
+   /* .navbar__menu {
+
+   } */
+}

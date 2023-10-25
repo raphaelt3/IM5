@@ -119,3 +119,28 @@
     padding: 3rem 1rem;
     line-height: 1;
 }
+
+/* schriftgrösse anhand viewport vergrössern. clamp: Schriftgrössen verändern sich anhand Viewport automatisch statt dass alles mit media queries bei jedem Breakpoint einzeln auf Geräte angepasst werden müsste */
+.hero__content h1 {
+    font-size: clamp(3rem, 5vw, 7rem);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.hero__content p {
+    font-size: clamp(1rem, 4vw, 2.5rem);
+    margin-bottom: 3rem;
+}
+
+.button {
+    padding: 1rem 3rem;
+    border: none;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-radius: 4px;
+}

@@ -1,4 +1,4 @@
-/* mit :root Hauptfarben Website festlegen */
+/* mit :root Grundfarben Website festlegen */
 :root {
     --red: #f9032f;
     --black: #000;
@@ -39,10 +39,16 @@
     color: var(--red);
 }
 
-/* max-width 768px bewirkt dass Navigationsmenü ab Breite von 768px verschwindet  */
+/* max-width 768px bewirkt dass Navigationsmenü ab Breite von 768px verschwindet, ohne overflow würde geöffnetes menü noch ein stück hoch und runter bewegen beim scrollen */
 @media screen and (max-width: 768px) {  
+    body.active {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
    .navbar__link {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    }
 
    .navbar__menu {
@@ -93,3 +99,6 @@
     transform: translateY(-8px) rotate(-45deg);
    }
 }
+
+/* Hero Section */
+

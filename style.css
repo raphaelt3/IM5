@@ -200,3 +200,85 @@
 }
 
 /* Surflevel Section */
+.surflevels {
+    background: var(--black);
+    color: var(--white);
+    padding: 6rem calc((100vw - 1100px) / 2);
+    text-align: center;
+}
+
+.surflevels h1 {
+   margin-bottom: 1rem; 
+   font-size: clamp(2rem, 5vw, 3rem);
+   padding: 0 1rem;
+}
+
+.surflevel__desc {
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 1rem;
+}
+
+.surflevel__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.surflevel__card {
+    padding: 2rem;
+    min-height: 450px;
+    width: 325px;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.surflevel__perks {
+    min-height: 150px;
+}
+
+.surflevel__card p {
+    margin-bottom: 1rem;
+}
+
+/* coloring and sizing icons */
+.fa-ribbon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--red);
+}
+
+.fa-medal {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--red);
+}
+
+.fa-trophy {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--red);
+}
+
+.surflevel__card h3 {
+   font-size: clamp(1rem, 5vw, 2rem);
+   margin-bottom: 2rem;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 1100px) {
+    .surflevel__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .surflevel__card {
+        width: 90%;
+        margin-bottom: 2rem;  
+    }
+}

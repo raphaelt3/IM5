@@ -101,4 +101,21 @@
 }
 
 /* Hero Section */
+/* Titelbild einfügen, stylen */
+.hero {
+    /* gradient mit rgba */
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('./images/surf-1.jpeg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.hero__content {
+    color: var(--white);
+    padding: 3rem 1rem;
+    line-height: 1;
+}

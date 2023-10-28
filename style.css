@@ -1,6 +1,6 @@
 /* mit :root Grundfarben Website festlegen */
 :root {
-    --red: #f9032f;
+    --blue: #03aff9;
     --black: #000;
     --white: #fff;
 }
@@ -37,7 +37,7 @@
 }
 
 .navbar__link:hover {
-    color: var(--red);
+    color: var(--blue);
 }
 
 /* max-width 768px bewirkt dass Navigationsmenü ab Breite von 768px verschwindet, ohne overflow würde geöffnetes menü noch ein stück hoch und runter bewegen beim scrollen */
@@ -136,7 +136,7 @@
 .button {
     padding: 1rem 3rem;
     border: none;
-    background: var(--red);
+    background: var(--blue);
     color: var(--white);
     font-size: 1rem;
     cursor: pointer;
@@ -167,7 +167,7 @@
 }
 
 .topline {
-   color: var(--red);
+   color: var(--blue);
    text-transform: uppercase;
    font-weight: bold;
    margin-bottom: 0.5rem;
@@ -189,7 +189,7 @@
 
 .fa-check-circle {
     margin-right: 0.5rem;
-    color: var(--red);
+    color: var(--blue);
 }
 
 /* responsive machen */
@@ -251,19 +251,19 @@
 .fa-ribbon {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: var(--red);
+    color: var(--blue);
 }
 
 .fa-medal {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: var(--red);
+    color: var(--blue);
 }
 
 .fa-trophy {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: var(--red);
+    color: var(--blue);
 }
 
 .surflevel__card h3 {
@@ -414,7 +414,7 @@
 
 .footer__desc h1 {
     margin-bottom: 2rem;
-    color: var(--red);
+    color: var(--blue);
     font-size: 1.5rem;
 }
 
@@ -448,7 +448,7 @@
 }
 
 .footer__link:hover {
-   color: var(--red);
+   color: var(--blue);
 }
 
 @media screen and (max-width: 820px) {

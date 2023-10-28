@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfspottr</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Einbindung Icon neben Logo -->
+    <script src="https://kit.fontawesome.com/960113b50d.js" crossorigin="anonymous"></script>
+    <!-- Source Sans 3 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar Section -->
+    <!-- Navbar Section --> 
     <nav class="navbar">
-        <a href="/" class="navbar__logo">SURFSPOTTR</a>
+        <a href="/" class="navbar__logo"><i class="fa-solid fa-location-dot"></i>SURFSPOTTR</a>
         <div class="navbar__toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -17,10 +24,79 @@
         </div>
         <div class="navbar__menu">
             <a href="/" class="navbar__link">Home</a>
-            <a href="/services.html" class="navbar__link">Services</a>
-            <a href="/plans.html" class="navbar__link">Plans</a>
-            <a href="/trainers.html" class="navbar__link">Trainers</a>
+            <a href="/services.html" class="navbar__link">Features</a>
+            <a href="/surflevels.html" class="navbar__link">Levels</a>
+            <a href="/spots.html" class="navbar__link">Spots</a>
         </div>
     </nav>
+    <!-- Surflevel Section -->
+    <div class="surflevels">
+        <h1>Surflevels</h1>
+        <p class="surflevel__desc">Für jedes Level den passenden Spot</p>
+        <div class="surflevel__wrapper">
+            <!-- card 1 -->
+            <div class="surflevel__card">
+                <div class="surflevel__title">
+                    <i class="fa-solid fa-ribbon"></i>
+                    <h3>Beginner</h3> 
+                </div>
+                <div class="surflevel__perks">
+                    <p>Oana Surf Luzern</p>
+                    <p>Scherzligenwelle Thun</p>
+                </div>
+                <a href="/" class="button">Entdecken</a>
+            </div>
+            <!-- card 2 -->
+            <div class="surflevel__card">
+                <div class="surflevel__title">
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Intermediate</h3> 
+                </div>
+                <div class="surflevel__perks">
+                    <p>Oana Surf Luzern</p>
+                    <p>Scherzligenwelle Thun</p>
+                    <p>Flusswelle Bremgarten</p>
+                </div>
+                <a href="/" class="button">Entdecken</a>
+            </div>
+            <!-- card 3 -->
+            <div class="surflevel__card">
+                <div class="surflevel__title">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Expert</h3> 
+                </div>
+                <div class="surflevel__perks">
+                    <p>Oana Surf Luzern</p>
+                    <p>Scherzligenwelle Thun</p>
+                    <p>Flusswelle Bremgarten</p>
+                    <p>Alaia Bay Sion</p>
+                </div>
+                <a href="/" class="button">Entdecken</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__desc">
+            <h1>Surfspottr</h1>
+            <p>Wellenstrasse 99</p>
+            <p>96815 Honolulu</p>
+          </div>
+          <div class="footer__links">
+            <h2 class="footer__title">Kontakt</h2>
+            <a href="/" class="footer__link">+41 33 333 33 33</a>
+            <a href="/" class="footer__link">info@surfspottr.ch</a>
+          </div>
+        </div>
+        <div class="footer__wrapper">
+          <div class="footer__links">
+            <h2 class="footer__title">Navigation</h2>
+            <a href="./index.html" class="footer__link">Home</a>
+            <a href="./services.html" class="footer__link">Features</a>
+            <a href="./surflevels.html" class="footer__link">Levels</a>
+            <a href="./spots.html" class="footer__link">Spots</a>
+          </div>
+    <script src="script.js"></script>
 </body>
 </html>

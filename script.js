@@ -18,11 +18,25 @@ menu.addEventListener('click', mobileMenu);
 // Animations
 gsap.registerPlugin(ScrollTrigger);
 
+// gsap.from('.animate-hero', {
+//     duration: 0.6,
+//     opacity: 0,
+//     y: -150,
+//     stagger: 0.3,
+// });
 gsap.from('.animate-hero', {
     duration: 0.6,
     opacity: 0,
     y: -150,
-    stagger: 0.3
+    stagger: 0.3,
+    onComplete: function() {
+        gsap.to('.animate-hero', {
+            duration: 0.9,
+            opacity: 1,
+            y: 0,
+            stagger: 0,
+        });
+    }
 });
 
 gsap.from('.animate-services', {
@@ -30,14 +44,14 @@ gsap.from('.animate-services', {
     duration: 0.5,
     opacity: 1,
     x: -150,
-    stagger: 0.12
+    stagger: 0.12,
 });
 
 gsap.from('.animate-img', {
     scrollTrigger: '.animate-services',
     duration: 1.2,
     opacity: 0,
-    x: -200
+    x: -200,
 });
 
 gsap.from('.animate-surflevel', {
@@ -46,7 +60,7 @@ gsap.from('.animate-surflevel', {
     opacity: 0,
     y: -150,
     stagger: 0.3,
-    delay: 0.5
+    delay: 0.5,
 });
 
 gsap.from('.animate-card', {
@@ -55,7 +69,7 @@ gsap.from('.animate-card', {
     opacity: 0,
     y: -150,
     stagger: 0.2,
-    delay: 0.5
+    delay: 0.5,
 });
 
 gsap.from('.animate-spots', {
@@ -64,5 +78,30 @@ gsap.from('.animate-spots', {
     opacity: 0,
     y: -150,
     stagger: 0.3,
-    delay: 0.5
+    delay: 0.5,
 });
+
+// Back to top button
+// Wenn die Seite geladen ist
+document.addEventListener("DOMContentLoaded", function() {
+    // Bei 100px herunterscrollen, zeige den Button
+    window.onscroll = function() {scrollFunction()};
+});
+
+function scrollFunction() { 
+    var button = document.getElementById("topBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.style.display = "block";
+        button.style.position = "fixed";
+        button.style.bottom = "10px"; // Wert nach Bedarf anpassen
+        button.style.right = "20px"; // Wert nach Bedarf anpassen
+    } else {
+        button.style.display = "none";
+    }
+}
+
+// Wenn der Benutzer auf den Button klickt, nach oben scrollen
+function topFunction() {
+    document.body.scrollTop = 0; // Für Safari
+    document.documentElement.scrollTop = 0; // Für Chrome, Firefox, IE und Opera
+}

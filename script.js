@@ -42,8 +42,27 @@ gsap.from('.animate-img', {
 
 gsap.from('.animate-surflevel', {
     scrollTrigger: '.animate-surflevel',
-    duration: 0.5,
-    opacity: 1,
-    x: -150,
-    stagger: 0.12
+    duration: 1,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
+});
+
+gsap.from('.animate-card', {
+    scrollTrigger: '.animate-card',
+    duration: 1,
+    opacity: 0,
+    y: -150,
+    stagger: 0.2,
+    delay: 0.5
+});
+
+gsap.from('.animate-spots', {
+    scrollTrigger: '.animate-spots',
+    duration: 1,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
 });

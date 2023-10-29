@@ -27,8 +27,23 @@ gsap.from('.animate-hero', {
 
 gsap.from('.animate-services', {
     scrollTrigger: '.animate-services',
-    duration: 0.6,
+    duration: 0.5,
+    opacity: 1,
+    x: -150,
+    stagger: 0.12
+});
+
+gsap.from('.animate-img', {
+    scrollTrigger: '.animate-services',
+    duration: 1.2,
     opacity: 0,
-    y: -150,
-    stagger: 0.3
+    x: -200
+});
+
+gsap.from('.animate-surflevel', {
+    scrollTrigger: '.animate-surflevel',
+    duration: 0.5,
+    opacity: 1,
+    x: -150,
+    stagger: 0.12
 });

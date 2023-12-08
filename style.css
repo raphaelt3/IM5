@@ -284,6 +284,43 @@
     }
 }
 
+/* API Wasserdaten */
+#container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center; /* Boxen gleichmäßig verteilen */
+    align-items: center;
+    min-height: 5vh;
+    background-color: rgb(255, 255, 255); /* Hintergrundfarbe */
+    
+  }
+  
+  .box {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #03aff9; /* Blau */
+    color: white; /* Textfarbe */
+    border-radius: 25px; /* Stark abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schlagschatten */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation für Hover-Effekt */
+  }
+  
+  .box:hover {
+    transform: scale(1.05); /* Vergrößern beim Darüberfahren */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Schatten verstärken */
+  }
+  
+  .h2__api {
+    margin: 0 0 10px 0;
+    text-align: center; /* Zentrierter Text */
+  }
+  
+  .p__ort {
+    margin: 0;
+    text-align: center; /* Zentrierter Text */
+  }
+  
+
 /* Spots Section */
 .spots {
     padding: 8rem calc((100vw - 1100px) / 2)

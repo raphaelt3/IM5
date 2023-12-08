@@ -105,3 +105,21 @@ function topFunction() {
     document.body.scrollTop = 0; // Für Safari
     document.documentElement.scrollTop = 0; // Für Chrome, Firefox, IE und Opera
 }
+
+// API Wasserdaten
+
+// JavaScript fetch to get data from the API
+fetch('https://aareguru.existenz.ch/v2018/current?city=bern')
+  .then(response => response.json())
+  .then(data => {
+    // Extracting flow and temperature from the data
+    const flow = data.aare.flow; // replace with the correct path in the data
+    const temperature = data.aare.temperature; // replace with the correct path in the data
+
+    // Displaying the data in the HTML
+    document.getElementById('flow').textContent = `${flow} m³/s`;
+    document.getElementById('temperature').textContent = `${temperature} °C`;
+  })
+  .catch(error => {
+    console.error('Error fetching data: ', error);
+  });
